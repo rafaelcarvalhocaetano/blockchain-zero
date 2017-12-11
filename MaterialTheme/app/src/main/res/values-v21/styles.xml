@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><resources>    <!-- Base application theme. -->    <string name="SuperMaterialTheme" parent="AppTheme">        <item name="android:navigationBarColor">@color/colorPrimary</item>    </string></resources>
