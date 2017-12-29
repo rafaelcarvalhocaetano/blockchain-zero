@@ -14,5 +14,12 @@
         android:text="@string/liga_desliga"
         android:layout_margin="16dp"
         android:checked="true"/>
+    
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkboxButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/gosto_de_android"/>
 
 </LinearLayout>

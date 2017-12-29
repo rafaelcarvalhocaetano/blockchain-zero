@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SelectControlls</string>
     <string name="liga_desliga">Liga/Desliga</string>
+    <string name="gosto_de_android">Gosto de Android</string>
 </resources>
