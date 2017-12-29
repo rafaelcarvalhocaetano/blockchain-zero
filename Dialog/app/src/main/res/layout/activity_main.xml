@@ -7,12 +7,18 @@
     android:orientation="vertical"
     tools:context="io.mda.dialog.MainActivity">
 
-<android.support.v7.widget.AppCompatButton
-    android:id="@+id/btn_dialogo"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_margin="16dp"
-    android:text="@string/btn_ok"/>
-
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_dialogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/btn_ok"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/btn_info"/>
 </LinearLayout>
