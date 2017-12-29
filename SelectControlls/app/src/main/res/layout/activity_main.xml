@@ -22,4 +22,36 @@
         android:layout_margin="16dp"
         android:text="@string/gosto_de_android"/>
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/option1"
+            android:text="@string/opcao_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/option2"
+            android:text="@string/opcao_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/option3"
+            android:text="@string/opcao_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"/>
+
+
+
+    </RadioGroup>
+
+
+
 </LinearLayout>
