@@ -5,6 +5,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
                         snackbar.dismiss();
                     }
                 });
+
+                View snackView = snackbar.getView();
+                snackView.setBackground(getResources().getColor(R.color.colorPrimaryDark, null));
+
+                TextView scaneText = snackView.findViewById(android.support.design.R.id.snackbar_action);
+                scaneText.setTextColor(getResources().getColor(android.R.color.white, null));
+
+
                 snackbar.show();
             }
         });
