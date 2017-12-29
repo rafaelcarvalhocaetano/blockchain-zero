@@ -32,16 +32,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public class AsyncCircular extends AsyncTask<Void, Integer, Void>{
-
         @Override
         protected Void doInBackground(Void... voids) {
 
             for (int i=0; i<=100; i++){
+                final int limit = 300;
                 try {
                     //chamando o método onProgressUpdate
                     publishProgress( i );
-
-                    Thread.sleep(300);
+                    Thread.sleep(limit);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
