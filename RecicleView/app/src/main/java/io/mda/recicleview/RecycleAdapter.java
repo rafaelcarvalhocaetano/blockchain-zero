@@ -1,5 +1,6 @@
 package io.mda.recicleview;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,11 +31,19 @@ public class RecycleAdapter extends RecyclerView.Adapter<ViewRolder>{
     }
 
     @Override
-    public void onBindViewHolder(ViewRolder holder, int position) {
+    public void onBindViewHolder(final ViewRolder holder, int position) {
 
-        Article article = list.get( position );
+        final Article article = list.get( position );
         holder.title.setText( article.getTitle() );
         holder.desc.setText( article.getAuthor() );
+        new DownloadImage( holder.fImageView ).execute( article.getEnclosure().getUrl() );
+        holder.appCompatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Integer(Intent.ACTION_VIEW, article.getSource());
+                holder.itemView.getContext().startActivity( i );
+            }
+        });
     }
 
     @Override
